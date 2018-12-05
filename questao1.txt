@@ -1,0 +1,23 @@
+Breno Mariz de Paiva Martins - 15/0006781
+Mateus de Morais Amaro da Silva - 15/0017880
+
+Questão 1)
+
+
+Componente
+
+a) Definição do elemento: Componentes podem ser vistos como alguma parte do sistema de software que é identificável e reusável, ou como o estado seguinte de abstração depois de funções, módulos e classes. São artefatos autocontidos e facilmente identificáveis.
+
+b) Papel (função) na abordagem DBC: Descrevem e/ou executam funções específicas e têm interfaces claras, documentação apropriada e uma condição de reuso definida. Executam determinadas funcionalidades estando em conformidade com as definições do modelo de componentes.
+
+Modelo de componente
+
+a) Definição do elemento: Conjunto de padrões e convenções com as quais os componentes devem estar em conformidade. Representa um elemento da arquitetura do sistema na qual são definidos os padrões e convenções impostas aos componentes do sistema.
+
+b) Papel (função) na abordagem DBC: Descrever a função de cada um e como eles interagem entre si. Com isso busca-se expressar restrições de projeto arquitetural ou global. Identifica as definições quanto a tipos de componentes, formas de interação e recursos necessários.
+
+Framework de componente
+
+a) Definição do elemento: É uma implementação de serviços que dão suporte ou reforçam o modelo de componentes. Representa a base sobre a qual os padrões e convenções do modelo de componentes são empregados. Com isso, framework e modelo de componentes podem ser considerados dois conceitos complementares e fortemente relacionados.
+
+b) Papel (função) na abordagem DBC: Gerenciar os recursos compartilhados pelos componentes e prover um mecanismo que possibilite a comunicação (interação) entre eles. A intra-estrutura oferecida pelos frameworks de componentes impõem restrições e regras no projeto e implementação, as quais devem ser consideradas pelo modelo de componentes. Os frameworks têm papel de reforçar e suportar as definições do modelo de componentes, bem como prover uma forma de interação dos componentes.

@@ -1,0 +1,22 @@
+Breno Mariz de Paiva Martins - 15/0006781
+Mateus de Morais Amaro da Silva - 15/0017880
+
+Questão 2)
+
+
+a) stub
+Os stubs são classes do lado do cliente que implementam a interface remota e traduzem as chamadas locais em chamadas remotas ao server, de forma semelhante a um “proxy”. Eles empacotam os argumentos utilizando serialização e enviam a chamada serializada ao server que por sua vez conecta a chamada a um “skeleton”.
+Fazendo uma comparação com os elementos arquiteturais apresentados no texto de Spagnoli e Becker, o stub pode ser relacionado ao elemento modelo de componente, pois se encaixa na definição de conjunto de padrões e convenções com as quais os componentes devem estar em conformidade, já que define a forma pela qual se dá a interação entre os objetos.
+
+b) skeleton
+O skeleton é uma classe do lado do server que recebe chamadas serializadas feitas pelo stub, desserializa essas chamadas e invocam o método chamado pelo stub, no objeto real, e depois serializa a resposta e respondem a chamada do stub.
+Assim como no caso o stub, o skeleton também pode ser relacionado ao elemento modelo de componente, pois também define a forma pela qual se dá a interação entre os objetos, se encaixando assim na definição de conjunto de padrões e convenções com as quais os componentes devem estar em conformidade.
+
+c) registro
+O “rmiregistry” é um recurso de nomeação do RMI que é utilizado pelo server para associar nomes a objetos remotos. O cliente pode buscar um objeto remoto pelo seu nome no registro e invocar um método nesse objeto.
+Por ser uma implementação que dá suporte/reforça o modelo de componentes, o “rmiregistry” pode ser relacionado, fazendo uma comparação com os elementos tratados por Spagnoli e Becker, com o framework de componente, já que além de reforçar e suportar as definições do modelo de componentes, também provê uma forma de interação entre os componentes, já que torna-se possível identificar o objeto remoto pelo seu nome.
+
+d) serialização (marshalling e unmarshalling) e invocação remota de métodos
+Serialização é uma forma de empacotamento (marshalling) que consiste em transformar um objeto em um array de bytes, permitindo que ele seja transportado de um endereço para outro. Um objeto serializado pode ser desserializado, assim como um objeto empacotado pode ser desempacotado em objeto válido.
+A invocação remota de métodos é um mecanismo que permite a invocação de métodos em objetos distribuídos. A invocação remota de métodos com argumentos serializados transporta o valor dos objetos de um endereço para outro.
+Podemos então, relacionar a serialização e a invocação remota de métodos com o elemento framework de componente, a serialização (marshalling e unmarshalling) e a invocação remota de métodos envolvem implementações que dão suporte/reforça o modelo de componentes, e além disso, representam a base sobre a qual os padrões e convenções do modelo de componentes são empregados, já que possibilitam a transição de dados, fazendo assim, com que ocorra a ligação/comunicação entre componentes.
